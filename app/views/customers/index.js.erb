@@ -1,0 +1,3 @@
+$("#customer-table").html("<%= escape_javascript (render partial: 'customers', locals: { customer: @customers })%>");
+$("#paginate").html("<%= escape_javascript(paginate(@customers, remote: true)) %>");
+

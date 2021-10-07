@@ -1,0 +1,10 @@
+<tr>
+    <td><%= customer.rut %></td>
+    <td><%= customer.business_name %></td>
+    <td><%= customer.business_line %></td>
+    <td><%= customer.address %></td>
+    <td><%= link_to 'Editar', edit_customer_path(customer) %></td>
+    <td><%= link_to 'Ver', customer %></td>
+    <td><%= link_to 'Borrar', customer, method: :delete, data: { confirm: '¿Estás seguro?' } %></td>
+</tr>        
+        

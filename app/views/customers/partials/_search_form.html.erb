@@ -1,0 +1,16 @@
+
+<div class="container mb-3">
+    <div class="row">
+        <div class="col-6">
+            <%= link_to 'Nuevo Cliente', new_customer_path, class: 'btn btn-primary letrasbtn' %>
+        </div>
+        <div class="col-6 d-grid gap-2 d-md-flex justify-content-md-end">
+            <h3>Buscar Clientes</h3>
+            <%= form_tag({controller: "customers", action: "index"}, method: :get) do %>
+                <%= text_field_tag "q", params[:q] %>
+                <%= submit_tag "Buscar", :q => nil, class: 'btn btn-success' %>
+            <% end%>
+        </div>
+    </div> 
+</div>
+
